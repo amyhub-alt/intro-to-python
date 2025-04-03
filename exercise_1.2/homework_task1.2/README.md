@@ -1,1 +1,1 @@
-
+I chose to use a dictionary to store individual recipes because it allows me to clearly label each attribute of the recipe using keys such as "name", "cooking_time", and "ingredients". This makes the data easy to understand, flexible to update, and convenient to access specific values. Dictionaries are ideal for storing related attributes together in a structured way, which is perfect for organizing recipe information.
