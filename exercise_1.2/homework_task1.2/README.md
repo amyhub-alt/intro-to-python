@@ -1,1 +1,4 @@
 I chose to use a dictionary to store individual recipes because it allows me to clearly label each attribute of the recipe using keys such as "name", "cooking_time", and "ingredients". This makes the data easy to understand, flexible to update, and convenient to access specific values. Dictionaries are ideal for storing related attributes together in a structured way, which is perfect for organizing recipe information.
+
+I used a list for the all_recipes structure because it allows me to store multiple recipe dictionaries in a specific order. Lists are ideal for sequential data and can be easily modified by adding, removing, or accessing items by index. This makes it simple to manage a growing set of recipes, loop through them, and display or manipulate the data as needed in future development.
+
