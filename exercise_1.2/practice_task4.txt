@@ -1,0 +1,12 @@
+str1 = 'hello, '
+str2 = 'how are you?'
+str3 = str1 + str2
+
+hello, how are you?
+
+Answers:
+str3[3:] would return 'lo, how are you?'
+str3[-3:] would return 'you?'
+str3[2:9:3] would return 'l,w'
+str3[::-2] would return '?,o, ,r, , o, ,l,h'
+str3[2:8] would return 'llo, h'
