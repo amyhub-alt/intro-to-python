@@ -1,0 +1,14 @@
+1Q: Why is file storage important when you’re using Python? What would happen if you didn’t store local files?
+A: File storage is important because it lets you save your data and use it again later. Without storing files locally, anything the program creates or collects would be lost once the program ends. Saving files means your work, data, or progress doesn’t disappear and can be reused, shared, or updated.
+
+2Q: In this Exercise you learned about the pickling process with the pickle.dump() method. What are pickles? In which situations would you choose to use pickles and why? 
+A: Pickles are a way to save Python objects (like lists or dictionaries) to a file using the pickle.dump() method. They turn Python data into a special format that can be stored and read back later. Pickles are useful when you want to save complex data types between program runs without having to recreate them from scratch.
+
+3Q:In Python, what function do you use to find out which directory you’re currently in? What if you wanted to change your current working directory?
+A: To find out which directory you’re currently in, you can use the os.getcwd() function. If you want to change your current working directory, you can use os.chdir("path/to/folder"). This is helpful when working with files in different folders on your computer.
+
+4Q: Imagine you’re working on a Python script and are worried there may be an error in a block of code. How would you approach the situation to prevent the entire script from terminating due to an error?
+A: If I think a block of code might cause an error, I would use a try-except block. This lets the script try to run the code, and if there’s an error, it catches it and runs some other code instead. That way, the whole program doesn’t crash just because of one problem.
+
+5Q: You’re now more than halfway through Achievement 1! Take a moment to reflect on your learning in the course so far. How is it going? What’s something you’re proud of so far? Is there something you’re struggling with? What do you need more practice with? Feel free to use these notes to guide your next mentor call. 
+A: I think the course is going well overall. I’ve learned a lot about how Python works, especially how to use data types, logic, and now file handling. I’m proud of how comfortable I’m getting writing short scripts. One thing I still struggle with sometimes is remembering the right syntax or when to use certain functions. I’d like more practice with writing longer programs and organizing code better.
