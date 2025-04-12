@@ -1,0 +1,18 @@
+1Q:In your own words, what is object-oriented programming? What are the benefits of OOP?
+A:Object-oriented programming, or OOP, is a way of writing code that’s based on real-world things called objects. Each object can have its own data (called attributes) and actions it can do (called methods). OOP helps break down a program into smaller, reusable pieces that are easier to manage.
+
+The main benefits of OOP are:
+-It helps keep code organized and clean, especially in larger projects.
+-You can reuse code by creating classes and then making multiple objects from them.
+-It makes it easier to work with complex data.
+-It’s more flexible – you can change parts of the code without affecting everything else.
+
+2Q:What are objects and classes in Python? Come up with a real-world example to illustrate how objects and classes work.
+A: In Python, a class is like a blueprint, and an object is something built from that blueprint. The class defines what data the object will have and what it can do. Once the class is created, you can make as many objects from it as you want.
+
+3Q:In your own words, write brief explanations of the following OOP concepts; 100 to 200 words per method is fine. 
+A:Inheritance is when a class (called a child or subclass) gets all the features of another class (called a parent or superclass). This helps you reuse code instead of writing the same thing over and over. For example, you could have a general class called Animal with basic features like eat() and sleep(). Then you can create a Dog class and a Cat class that inherit from Animal, so they automatically get those features. You can also add specific things just for dogs or cats, like bark() or meow().
+
+Polymorphism means that different classes can use the same method name but do different things. So if both a Dog and a Cat have a method called speak(), they can each have their own version—like the dog says “Woof!” and the cat says “Meow.” You can call speak() on any animal, and it’ll know which one to use based on the object. This makes your code more flexible and easier to manage.
+
+Operator Overloading means you can change how Python’s built-in operators (like +, *, etc.) work with objects you create. For example, if you have a Book class, you could define what it means to add two books together using the + operator—maybe it combines their page counts or titles. Normally, + is used for numbers or strings, but with operator overloading, you can make it work in your own custom way for your own objects.
