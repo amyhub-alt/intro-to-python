@@ -1,0 +1,31 @@
+1Q:Suppose you’re in an interview. The interviewer gives you their company’s website as an example, asking you to convert the website and its different parts into Django terms. How would you proceed? For this question, you can think about your dream company and look at their website for reference. 
+(Hint: In the Exercise, you saw the example of the CareerFoundry website in the Project and Apps section.)
+A:If I were asked to break down a company’s website into Django terms, I’d start by identifying the different parts or sections of the site—each of those could be its own app. For example, if I picked a brand like Patagonia (one of my dream companies), the site might have a homepage, a product catalog, a blog, and a customer account section.
+Here’s how I’d map it in Django:
+  -Home app – handles landing page content and navigation
+  -Products app – shows product listings, categories, and details
+  -Blog app – handles articles, comments, and author info
+  -Users app – handles sign-up, login, profile management
+Each app would have its own models (for database structure), views (to handle logic), and templates (for what users see). The whole project would be tied together under one Django project, with each part working like a mini module in the larger site.
+
+
+
+2Q:In your own words, describe the steps you would take to deploy a basic Django application locally on your system. 
+A:
+    1.Set up a virtual environment to keep my project’s packages separate from the rest of my system.
+    2.Install Django using pip install django.
+    3.Create a new Django project using django-admin startproject myproject.
+    4.Create one or more apps inside the project using python manage.py startapp myapp.
+    5.Add the app to the project settings under INSTALLED_APPS.
+    6.Define models and run python manage.py makemigrations and migrate to set up the database.
+    7.Create views and templates to display content.
+    8.Run the local server using python manage.py runserver and open the site in my browser at http://127.0.0.1:8000.
+
+3Q: Do some research about the Django admin site and write down how you’d use it during your web application development.
+A:The Django admin site is a built-in tool that lets you manage your project’s data through a web interface. It automatically gives you a dashboard where you can view, add, update, and delete items in your database—like users, posts, products, etc.—without writing extra code.
+During development, I’d use it to:
+  -Quickly check if my models are working correctly.
+  -Add and edit data for testing.
+  -Manage users and permissions.
+  -Save time during early development instead of creating custom front-end forms right away.
+To use the admin site, I’d first create a superuser with python manage.py createsuperuser, then log in at /admin. It’s a super handy way to manage the backend without building it from scratch.
