@@ -1,0 +1,15 @@
+1Q:Do some research on Django models. In your own words, write down how Django models work and what their benefits are.
+A: Django models are how you define the structure of your database using Python code. Each model is like a blueprint for a table in your database. You use classes to create models, and each class attribute represents a column in the table (like a name, price, or date). Once you define your models, Django can automatically create and update your database using migrations.
+Benefits of Django models:
+-You don’t need to write raw SQL – Django takes care of that for you.
+-It keeps your code clean and organized.
+-If you change your data structure later, Django can update the database with a simple command.
+-It makes it easy to connect your database to views and templates.
+
+
+
+2Q:In your own words, explain why it is crucial to write test cases from the beginning of a project. You can take an example project to explain your answer.
+A:Writing test cases from the start helps you catch bugs early, saves time, and keeps your code reliable as it grows. If you only test things at the end, you might miss small mistakes that cause bigger problems later.
+Example:
+Imagine you're building a recipe app where users can create and save recipes. If you write a test that checks whether a new recipe saves correctly, you’ll quickly know if something breaks when you change your model or form later on. Without tests, you’d have to manually check every time—or worse, only find out after a user reports a bug.
+Tests also give you peace of mind. When you update or refactor code, you can run your tests to make sure everything still works. It’s like having a safety net while you build.
