@@ -1,0 +1,23 @@
+1Q:Do some research on Django views. In your own words, use an example to explain how Django views work.
+A:In Django, views are Python functions or classes that handle what a user sees and does when they visit a page on your site. A view takes a request and returns a response—usually an HTML page, but it could also be data like JSON.
+Example: If someone goes to the homepage of a website, the view decides what data to get (like a list of products) and which template to send that data to.
+
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Welcome to my site!")
+
+
+2Q:Imagine you’re working on a Django web development project, and you anticipate that you’ll have to reuse lots of code in various parts of the project. In this scenario, will you use Django function-based views or class-based views, and why?
+A: If I knew I would need to reuse a lot of code across different parts of my Django project, I would choose class-based views (CBVs). Class-based views make it easier to organize and reuse code because you can use inheritance (just like in OOP). This means I could write a general view and then create more specific ones based on it without rewriting everything.
+Function-based views (FBVs) are simpler for small projects or one-off pages, but CBVs are better for bigger projects where you need to structure things neatly and avoid repetition.
+
+3Q:Read Django’s documentation on the Django template language and make some notes on its basics.
+A: 
+-Django templates are HTML files mixed with special Django code.
+-You can use double curly braces {{ }} to display variables in a template.
+    Example: {{ user.name }} will show the user's name.
+-You can use template tags inside {% %} to add logic like loops and if-statements.
+    Example: {% for product in products %} to loop through a list of products.
+-You can extend templates, meaning you can create a base layout (like a navbar and footer) and reuse it across many pages.
+-You can include small pieces of templates inside other templates, which helps keep code cleaner.
