@@ -1,1 +1,21 @@
-test
+1Q: In your own words, explain Django static files and how Django handles them.
+A: In Django, static files are things like images, CSS (styling), and JavaScript (scripts) that don’t change based on user input. They stay the same for everyone visiting the site. Django handles static files by letting you put them in a special folder (usually called static/) inside your apps. Then, you link to them in your templates using {% static 'filename' %}.
+
+During development, Django finds and serves these files for you. When you’re ready to deploy a project live, Django has commands (like collectstatic) that gather all your static files into one place so the server can handle them efficiently.
+
+
+2Q:Look up the following two Django packages on Django’s official documentation and/or other trusted sources. Write a brief description of each.
+A:ListView:
+ListView is a Django class-based view that displays a list of objects from a database. It automatically handles fetching the data and sending it to a template, so you don't have to write the same code over and over again. For example, if you have a list of blog posts or products, you can use ListView to show them easily with very little extra code.
+
+DetailView:
+DetailView is a Django class-based view that shows detailed information about a single object. It’s perfect when you want to display just one item, like a single blog post, a product page, or a user profile. It handles looking up the object by its ID and passing it to the template automatically.
+
+
+
+3Q:You’re now more than halfway through Achievement 2! Take a moment to reflect on your learning in the course so far. How is it going? What’s something you’re proud of so far? Is there something you’re struggling with? What do you need more practice with? You can use these notes to guide your next mentor call. 
+A:I feel like things are starting to click more, especially how Django projects are organized and how everything (models, views, templates) connects. I’m proud that I can now set up basic Django apps and understand the flow of data from the database to the screen.
+
+One thing I’m still struggling with a little is remembering all the steps when connecting models to views to templates, especially when working with forms. I definitely need more practice with setting up dynamic pages and handling user input.
+
+Overall, I’m feeling more confident and excited to keep going. I’m starting to see how all the skills I’m learning could come together in real-world projects!
