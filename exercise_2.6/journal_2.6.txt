@@ -1,0 +1,17 @@
+1Q:In your own words, write down the importance of incorporating authentication into an application. You can take an example application to explain your answer. 
+A: Authentication is important because it controls who can access certain parts of your app. It helps keep users’ information safe and makes sure that only the right people can view or edit data. For example, in a recipe app, you’d want users to log in so they can save their own recipes, update them, or delete them. Without authentication, anyone could access or change someone else's content, which wouldn't be secure or private. Adding authentication also allows for features like user profiles, personalized settings, and activity tracking.
+
+2Q: In your own words, explain the steps you should take to create a login for your Django web application. 
+A: 
+1.Use Django’s built-in authentication system – it's already included in Django.
+2.Create a login form using Django’s AuthenticationForm.
+3.Create a login view where you check the user’s input using the authenticate() function and log them in with login().
+4.Add a login URL and template to your app so users can access the login page.
+5.Protect certain views using the @login_required decorator so only logged-in users can see them.
+6.Set up a logout view so users can safely log out.
+
+3Q: Look up the following three Django functions on Django’s official documentation and/or other trusted sources and write a brief description of each.
+A:
+-authenticate() : This function checks if a username and password match a user in the database. If the credentials are valid, it returns a user object; if not, it returns None. It’s often used in login views to verify user info.
+-redirect() : The redirect() function sends a user to a different URL or view. It’s commonly used after logging in or submitting a form to send the user to the next page. Example: redirect('home') sends the user to the homepage.
+-include() : The include() function is used in the urls.py file to pull in other URL patterns from different apps. This keeps your project organized, especially when you have multiple apps. It lets you split up your URL routing into smaller parts.
