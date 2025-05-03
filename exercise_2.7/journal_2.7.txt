@@ -1,0 +1,33 @@
+1Q:Consider your favorite website/application (you can also take CareerFoundry). Think about the various data that your favorite website/application collects. Write down how analyzing the collected data could help the website/application. 
+A:Ex: Spotify. It collects tons of data—like what songs users play, how often they skip songs, what time of day they listen, and what devices they use. Analyzing this data helps Spotify improve the user experience by recommending better music, creating personalized playlists, and showing users the content they actually care about. For the company, it also helps with business decisions—like which artists to promote or what features to develop next. Data analysis can also detect unusual activity or help with fixing bugs based on user behavior.
+
+
+
+2Q: Read the Django official documentation on QuerySet API. Note down the different ways in which you can evaluate a QuerySet.
+A: In Django, a QuerySet represents a collection of database queries. A QuerySet is lazy, meaning it doesn’t hit the database until you actually evaluate it. There are several ways to evaluate a QuerySet:
+-Iteration: Looping through the QuerySet (like in a for loop) forces it to run.
+-Slicing/Indexing: Accessing items (like qs[0]) will trigger the query.
+-Converting to a list: Using list(queryset) runs the query.
+-Boolean checks: Using if queryset: or len(queryset) will also evaluate it.
+-Aggregate functions: Using .count(), .exists(), or .first() triggers a database hit.
+
+3Q:In the Exercise, you converted your QuerySet to DataFrame. Now do some research on the advantages and disadvantages of QuerySet and DataFrame, and explain the ways in which DataFrame is better for data processing.
+A:QuerySet (Django):
+  -Tied to your database and models.
+  -Lazy by default – efficient until evaluated.
+  -Good for retrieving, filtering, and managing data directly from the database.
+  -Limited when it comes to complex data manipulation or analysis.
+
+DataFrame (Pandas):
+  -Great for data processing, analysis, and transformation.
+  -Built-in tools for sorting, filtering, reshaping, and calculating statistics.
+  -Easier to work with for tasks like data cleaning or generating charts.
+  -Not connected directly to your database—you usually convert QuerySets into DataFrames.
+
+Why DataFrames are better for data processing:
+  -You can use one line of code to do things like get averages, group data, or sort it.
+  -It’s designed for working with large datasets in memory.
+  -You can quickly generate summaries or export to Excel/CSV.
+
+Disadvantage of DataFrames:
+-You have to load data into memory, and it doesn't sync back to the database—so it’s not great for saving changes unless you convert it back or use additional tools.
