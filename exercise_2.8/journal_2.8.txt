@@ -1,0 +1,27 @@
+1Q: Explain how you can use CSS and JavaScript in your Django web application.
+A:In a Django project, you can use CSS and JavaScript by placing those files in a folder called static/. Each app in your project can have its own static folder, or you can have one main static folder for the whole project. In your HTML templates, you load these files using {% load static %} at the top of the file and then link to them like this:
+
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<script src="{% static 'js/script.js' %}"></script>
+
+This lets you style your pages and add interactivity, like dropdowns or animations, just like you would in a regular website.
+
+2Q:In your own words, explain the steps you’d need to take to deploy your Django web application. 
+A:To deploy a Django app:
+1-Prepare your project for production – set DEBUG = False in settings.py, and make sure ALLOWED_HOSTS is set correctly.
+2-Set up static files – run collectstatic so all CSS/JS files are gathered in one place.
+3-Choose a platform – for example, Heroku, PythonAnywhere, or DigitalOcean.
+4-Create a production database (like PostgreSQL if not using SQLite).
+5-Push your code to the platform – often using Git.
+6-Set environment variables – like SECRET_KEY, DEBUG, and database info.
+7-Run migrations and create a superuser if needed.
+8-Test everything to make sure it works live.
+
+3Q:You’ve now finished Achievement 2 and, with it, the whole course! Take a moment to reflect on your learning:
+What went well during this Achievement? 
+What’s something you’re proud of? 
+What was the most challenging aspect of this Achievement? 
+Did this Achievement meet your expectations? Did it give you the confidence to start working with your new Django skills?
+A:This Achievement helped everything come together. I finally saw how Django connects all the parts—models, views, templates, forms, and static files—and how to turn it into a working app. I’m proud that I built something with multiple pages and dynamic content, and that I now understand how to organize and deploy a project.
+The most challenging part was remembering the order of steps—especially when setting up forms, user authentication, or connecting views and templates. But with practice, it got easier.
+This Achievement definitely met my expectations. I feel more confident using Django and can see how I could build a full web app from scratch. I’m excited to keep practicing and improving!
